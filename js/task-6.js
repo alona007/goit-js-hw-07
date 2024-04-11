@@ -37,4 +37,3 @@ function getRandomHexColor() {
     function destroyBoxes() {
       boxesContainer.innerHTML = '';
     }
- 

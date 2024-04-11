@@ -9,5 +9,5 @@ categories.forEach(category => {
   const categoryName = category.querySelector('h2').textContent;
   const categoryItems = category.querySelectorAll('li').length;
   console.log(`Category: ${categoryName}`);
-  console.log(`Items: ${categoryItems}`);
+  console.log(`Elements: ${categoryItems}`);
 });

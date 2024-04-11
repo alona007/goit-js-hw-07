@@ -14,30 +14,176 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.gallery {
+/* -------------Task 1--------------*/ 
+#categories {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.item {
+  background: #f6f6fe;
+  border-radius: 8px;
+  padding: 16px;
+  width: 360px; 
+  margin-bottom: 24px;
+}
+
+.item h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33; 
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin: 0; 
+  padding-bottom: 16px;
+}
+
+.item ul {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
   list-style-type: none;
   padding: 0;
-  
-}
-.gallery-item {
-  margin-right: 10px;
-}
-.gallery-item:last-child {
-  margin-right: 0;
-}
-.gallery-item img {
-  width: 200px;
-  height: auto;
+  border-radius: 8px;
+  width: 100%; 
 }
 
-#boxes {
+.item ul li {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+
+/* -------------Task 2-------------- */
+.gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
-.box {
-  width: 30px;
-  height: 30px;
-  margin: 5px;
+.gallery-item {
+  flex: 0 0 calc(33.33% - 16px); 
+  margin-bottom: 16px;
 }
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  }
+
+/* -------------Task 3--------------*/ 
+#name-input {
+  height: 40px;
+  width: 360px;
+  margin-top: 24px;
+  margin-right: 24px;
+  margin-left: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  
+}
+
+h1 {
+  margin-left: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/* -------------Task 4-------------- */
+.login-form {
+  max-width: 408px;
+  max-height: 256px;
+  padding: 24px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.login-form button[type="submit"] {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  border: none;
+  background: #4e75ff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* -------------Task 5-------------- */
+.widget {
+  text-align: center;
+  margin: 100px 88px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5; 
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.change-color {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  background: #4e75ff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+.change-color:hover {
+  background-color: #0056b3;
+}
+
+/* -------------Task 6-------------- */
