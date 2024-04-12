@@ -187,3 +187,58 @@ h1 {
 }
 
 /* -------------Task 6-------------- */
+#controls {
+  border-radius: 8px;
+  padding: 32px;
+  min-width: 486px;
+  height: 104px;
+  background: #f6f6fe;
+  margin-bottom: 16px;
+}
+
+input[type="number"] {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 0;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  margin-right: 16px;
+  box-sizing: border-box;
+}
+
+button[data-create],
+button[data-destroy] {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: 1px solid #ffffff;
+  margin-right: 16px;
+}
+
+button[data-create] {
+  background: #4e75ff;
+}
+
+button[data-destroy] {
+  background: #ff4e4e;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background: #f6f6fe;
+}
+
+.box {
+  margin-right: 44px;
+  margin-bottom: 16px;
+}
+/* -------------The end-------------- */
